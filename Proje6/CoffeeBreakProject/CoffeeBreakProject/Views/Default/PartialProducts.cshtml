@@ -1,0 +1,22 @@
+﻿@model List<CoffeeBreakProject.Models.Entity.CoffeeProduct>
+<div class="coffee_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <h1 class="coffee_taital">OUR Coffee OFFER</h1>
+            <div class="bulit_icon"><img src="/web/images/bulit-icon.png"></div>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-3 col-md-6">
+            <div class="coffee_img"><img src="@item.CoffeeImage"></div>
+            <h3 class="types_text">@item.CoffeeName</h3>
+            <p class="looking_text">@item.CoffeeDescription</p>
+                <div class="read_bt"><a href="#">Daha Fazlası</a></div>
+                </div>
+        }
+    </div>
+</div>
+

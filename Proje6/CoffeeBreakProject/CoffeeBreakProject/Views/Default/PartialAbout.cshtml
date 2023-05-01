@@ -1,0 +1,22 @@
+﻿@model List<CoffeeBreakProject.Models.Entity.AboutU>
+@foreach (var item in Model)
+{
+    <div class="about_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="about_taital">About Our shop</h1>
+                    <div class="bulit_icon"><img src="/web/images/bulit-icon.png"></div>
+                </div>
+            </div>
+            <div class="about_section_2 layout_padding">
+                <div class="image_iman"><img src="@item.AboutUsImage" class="about_img"></div>
+                <div class="about_taital_box">
+                    <h1 class="about_taital_1">Coffee distribution '</h1>
+                    <p class=" about_text">@item.AboutUsContent</p>
+                    <div class="readmore_btn"><a href="#">Daha Fazlası</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

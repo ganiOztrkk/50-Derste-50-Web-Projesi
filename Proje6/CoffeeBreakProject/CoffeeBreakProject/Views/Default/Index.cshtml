@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    @Html.Action("PartialHeader")
+</head>
+<body>
+    <div class="header_section">
+        @Html.Action("PartialNavbar")
+        @Html.Action("PartialBanner")
+    </div>
+@Html.Action("PartialProducts")
+@Html.Action("PartialAbout")
+@Html.Action("PartialCustomers")
+@Html.Action("PartialContact")
+@Html.Action("PartialFooter")
+@Html.Action("PartialCopyRight")
+@Html.Action("PartialScript")
+</body>
+</html>

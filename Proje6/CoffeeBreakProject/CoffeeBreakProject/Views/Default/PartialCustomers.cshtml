@@ -1,0 +1,28 @@
+﻿@using CoffeeBreakProject.Models.Entity
+@model List<Customer>
+<div class="client_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="about_taital">Müşteriler Ne Diyor?</h1>
+                <div class="bulit_icon"><img src="/web/images/bulit-icon.png"></div>
+            </div>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="client_section_2">
+
+                <div class="client_taital_main">
+                    <div class="client_left">
+                        <div class="client_img"><img src="@item.CustomerImage"></div>
+                    </div>
+                    <div class="client_right">
+                        <h3 class="moark_text">@item.CustomerName @item.CustomerSurname</h3>
+                        <p class="client_text">@item.CustomerComment</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

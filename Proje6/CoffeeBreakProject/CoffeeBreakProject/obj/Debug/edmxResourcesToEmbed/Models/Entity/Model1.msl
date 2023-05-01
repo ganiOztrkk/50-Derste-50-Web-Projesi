@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbCoffeeBreakModelStoreContainer" CdmEntityContainer="DbCoffeeBreakEntities">
+    <EntitySetMapping Name="AboutUs">
+      <EntityTypeMapping TypeName="DbCoffeeBreakModel.AboutU">
+        <MappingFragment StoreEntitySet="AboutUs">
+          <ScalarProperty Name="AboutID" ColumnName="AboutID" />
+          <ScalarProperty Name="AboutUsContent" ColumnName="AboutUsContent" />
+          <ScalarProperty Name="AboutUsImage" ColumnName="AboutUsImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Blogs">
+      <EntityTypeMapping TypeName="DbCoffeeBreakModel.Blog">
+        <MappingFragment StoreEntitySet="Blog">
+          <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+          <ScalarProperty Name="BlogContent" ColumnName="BlogContent" />
+          <ScalarProperty Name="BlogImage" ColumnName="BlogImage" />
+          <ScalarProperty Name="ContentDate" ColumnName="ContentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CoffeeProducts">
+      <EntityTypeMapping TypeName="DbCoffeeBreakModel.CoffeeProduct">
+        <MappingFragment StoreEntitySet="CoffeeProducts">
+          <ScalarProperty Name="CoffeeID" ColumnName="CoffeeID" />
+          <ScalarProperty Name="CoffeeName" ColumnName="CoffeeName" />
+          <ScalarProperty Name="CoffeeDescription" ColumnName="CoffeeDescription" />
+          <ScalarProperty Name="CoffeeImage" ColumnName="CoffeeImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="DbCoffeeBreakModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="AddressDetail1" ColumnName="AddressDetail1" />
+          <ScalarProperty Name="AddressDetail2" ColumnName="AddressDetail2" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MailAddress" ColumnName="MailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="DbCoffeeBreakModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerSurname" ColumnName="CustomerSurname" />
+          <ScalarProperty Name="CustomerComment" ColumnName="CustomerComment" />
+          <ScalarProperty Name="CustomerImage" ColumnName="CustomerImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Headers">
+      <EntityTypeMapping TypeName="DbCoffeeBreakModel.Header">
+        <MappingFragment StoreEntitySet="Header">
+          <ScalarProperty Name="HeaderID" ColumnName="HeaderID" />
+          <ScalarProperty Name="HeaderContent" ColumnName="HeaderContent" />
+          <ScalarProperty Name="ContentDescription" ColumnName="ContentDescription" />
+          <ScalarProperty Name="HeaderImage" ColumnName="HeaderImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

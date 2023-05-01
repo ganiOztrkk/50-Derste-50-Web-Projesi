@@ -1,0 +1,57 @@
+﻿@model List<CoffeeBreakProject.Models.Entity.Header>
+<div class="banner_section layout_padding">
+    <div class="container">
+        <div id="banner_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="banner_img"><img src="/web/images/banner-img.png"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="banner_taital_main">
+                                <h1 class="banner_taital">DozeCoffee</h1>
+                                <h5 class="tasty_text">DozeCoffee Lezzeti</h5>
+                                <p class="banner_text">Kahve 101</p>
+                                <div class="btn_main">
+                                    <div class="about_bt"><a href="#">Hakkımızda</a></div>
+                                    <div class="callnow_bt active"><a href="#">İletişime Geç!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @foreach (var item in Model)
+                {
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="banner_img"><img src="@item.HeaderImage"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="banner_taital_main">
+                                    <h1 class="banner_taital">DozeCoffee</h1>
+                                    <h5 class="tasty_text">@item.HeaderContent</h5>
+                                    <p class="banner_text">@item.ContentDescription</p>
+                                    <div class="btn_main">
+                                        <div class="about_bt"><a href="#">Hakkımızda</a></div>
+                                        <div class="callnow_bt active"><a href="#">İletişime Geç!</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#banner_slider" role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
