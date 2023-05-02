@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbDistinctModelStoreContainer" CdmEntityContainer="DbDistinctEntities">
+    <EntitySetMapping Name="HAKKIMDAs">
+      <EntityTypeMapping TypeName="DbDistinctModel.HAKKIMDA">
+        <MappingFragment StoreEntitySet="HAKKIMDA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HAKKIMDA1" ColumnName="HAKKIMDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ILETISIMs">
+      <EntityTypeMapping TypeName="DbDistinctModel.ILETISIM">
+        <MappingFragment StoreEntitySet="ILETISIM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AD" ColumnName="AD" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="MESAJ" ColumnName="MESAJ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
