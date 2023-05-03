@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbEmlakProjeModelStoreContainer" CdmEntityContainer="DbEmlakProjeEntities">
+    <EntitySetMapping Name="EVLERs">
+      <EntityTypeMapping TypeName="DbEmlakProjeModel.EVLER">
+        <MappingFragment StoreEntitySet="EVLER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+          <ScalarProperty Name="FIYAT" ColumnName="FIYAT" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="YATAK" ColumnName="YATAK" />
+          <ScalarProperty Name="BANYO" ColumnName="BANYO" />
+          <ScalarProperty Name="METREKARE" ColumnName="METREKARE" />
+          <ScalarProperty Name="GORSEL" ColumnName="GORSEL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

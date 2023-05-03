@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbEmlakProjeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EVLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BASLIK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="YATAK" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="BANYO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="METREKARE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GORSEL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DbEmlakProjeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EVLERs" EntityType="Self.EVLER" />
+  </EntityContainer>
+</Schema>
